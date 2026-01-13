@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Westlife Official Fan Site</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+    body {
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+
+    /* NAVIGATION */
+    nav {
+        background: #0d1b2a;
+        padding: 15px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        position: sticky;
+        top: 0;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        z-index: 10;
+    }
+    nav .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        margin: 0;
+        padding: 0;
+    }
+    nav ul li {
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    nav ul li:hover { opacity: 0.7; }
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    /* HERO SECTION */
+    .hero {
+        background: url('https://od2-image-api.abs-cbn.com/prod/editorImage/1754365121168westlife%20image.jpg') top/cover no-repeat;
+        width: 100%;
+        height: 450px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        text-shadow: 0 4px 10px rgba(0,0,0,0.8);
+        padding-top: 60px;
+        box-sizing: border-box;
+    }
+    .hero h1 {
+        font-size: 3rem;
+        margin: 0 0 10px 0;
+        text-transform: uppercase;
+    }
+
+    /* CONTENT SECTIONS */
+    .section {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+    .section h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 25px;
+    }
+
+    /* MEMBER CARDS */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    .card {
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        overflow: hidden;
+        transition: 0.3s;
+    }
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .card img {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+    }
+    .card-content {
+        padding: 15px;
+    }
+    .card-content h3 { margin: 0 0 8px; }
+    .card-content p { margin: 4px 0; opacity: 0.8; }
+
+    /* ALBUMS */
+    .album-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+    }
+    .album-card {
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        text-align: center;
+        transition: 0.3s;
+    }
+    .album-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .album-card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+    .album-card p {
+        margin: 10px 0;
+        font-weight: 600;
+    }
+    .album-card p a {
+        color: #333;
+        text-decoration: none;
+    }
+    .album-card p a:hover {
+        text-decoration: underline;
+    }
+
+    /* FOOTER */
+    footer {
+        background: #0d1b2a;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+    }
+
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">WESTLIFE</div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="members.html">Members</a></li>
+        <li><a href="albums.html">Albums</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+</nav>
+
+
+<div class="hero" id="home">
+    <h1>Westlife</h1>
+</div>
+
+<!-- MEMBERS SECTION -->
+<div class="section" id="members">
+    <h2>Band Members</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="https://bookingagentinfo.com/wp-content/uploads/2022/06/Shane-Filan-2.jpg" alt="">
+            <div class="card-content">
+                <h3><a href="https://en.wikipedia.org/wiki/Shane_Filan" target="_blank">Shane Filan</a></h3>
+                <p>Lead Vocalist</p>
+                <p><em>Founding member known for his powerful voice.</em></p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://static.standard.co.uk/2022/11/28/18/eeb2336c19e4249e2aa11d088ea7e332Y29udGVudHNlYXJjaGFwaSwxNjY5NzQzNDYz-2.65774002.jpg?crop=8:5,smart&quality=75&auto=webp&width=1000" alt="">
+            <div class="card-content">
+                <h3><a href="https://en.wikipedia.org/wiki/Mark_Feehily" target="_blank">Mark Feehily</a></h3>
+                <p>Lead Vocalist</p>
+                <p><em>Known for soulful tone and emotional depth.</em></p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://focus.independent.ie/thumbor/ngXsPfVHtaZMYoYBJYm3uB6Oq8c=/0x8:1500x835/960x640/prod-mh-ireland/c2f17a52-bb51-11ed-900e-0210609a3fe2.jpg" alt="">
+            <div class="card-content">
+                <h3><a href="https://en.wikipedia.org/wiki/Kian_Egan" target="_blank">Kian Egan</a></h3>
+                <p>Vocalist</p>
+                <p><em>Charismatic performer and multi-instrumentalist.</em></p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://goss.ie/wp-content/uploads/2018/02/Gossies-Awards-2018-120-696x536.jpg" alt="">
+            <div class="card-content">
+                <h3><a href="https://en.wikipedia.org/wiki/Nicky_Byrne" target="_blank">Nicky Byrne</a></h3>
+                <p>Vocalist</p>
+                <p><em>Energetic performer with strong stage presence.</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ALBUMS SECTION -->
+<div class="section" id="albums">
+    <h2>Discography</h2>
+    <div class="album-grid">
+        <div class="album-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Westlifewestlife.jpg" alt="Westlife">
+            <p><a href="https://www.youtube.com/watch?v=8FwEh9-MZB4" target="_blank">1999 — Westlife</a></p>
+        </div>
+        <div class="album-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/3/3f/Westlife-CoasttoCoastEuropeanEdition.jpg" alt="Coast to Coast">
+            <p><a href="https://www.youtube.com/watch?v=2_MKjJhVnrM" target="_blank">2000 — Coast to Coast</a></p>
+        </div>
+        <div class="album-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/1/19/Westlife_-_World_of_our_own_high_resolution.jpg" alt="World of Our Own">
+            <p><a href="https://www.youtube.com/watch?v=R8dB6Hf8E6A" target="_blank">2001 — World of Our Own</a></p>
+        </div>
+        <div class="album-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/8/8a/Westlife_Turnaround.png" alt="Turnaround">
+            <p><a href="https://www.youtube.com/watch?v=H3rt8yq-Q3Q" target="_blank">2002 — Turnaround</a></p>
+        </div>
+        <div class="album-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/4/4f/Westlife_-_Spectrum.png" alt="Spectrum">
+            <p><a href="https://www.youtube.com/watch?v=G0oJzL-hB2o" target="_blank">2019 — Spectrum</a></p>
+        </div>
+    </div>
+</div>
+
+<!-- ABOUT SECTION -->
+<div class="section" id="about">
+    <h2>About Westlife</h2>
+    <p style="max-width:800px;margin:auto;font-size:1.1rem;text-align:center;line-height:1.8;">
+        Westlife is an Irish pop vocal group known for timeless ballads, iconic harmonies, and unforgettable hits such as
+        <em>You Raise Me Up</em>, <em>Flying Without Wings</em>, and <em>My Love</em>. With millions of albums sold worldwide, they remain one of the most beloved pop groups of all time.
+    </p>
+
+    <!-- IMAGE BELOW ABOUT -->
+    <div style="text-align:center; margin-top:20px;">
+        <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Westlifewestlife.jpg" alt="Westlife Band" style="max-width:80%; height:auto; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.2);">
+    </div>
+</div>
+
+<footer>
+    © 2025 Westlife Fan Site — Designed with ♥
+</footer>
+
+</body>
+</html>
